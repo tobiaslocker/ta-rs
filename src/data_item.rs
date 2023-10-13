@@ -137,13 +137,13 @@ impl DataItemBuilder {
                     close,
                     volume,
                 };
-                Ok(item)
             } else {
                 Err(TaError::DataItemInvalid)
             }
         } else {
-            Err(TaError::DataItemIncomplete)
+            // Err(TaError::DataItemIncomplete)
         }
+        Ok(item)
     }
 }
 
